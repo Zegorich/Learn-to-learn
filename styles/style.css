@@ -14,13 +14,63 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  position: relative;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  z-index: -1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.logo_place_header{
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  width: 228px;
+  height: 32px;
 }
+
+.header__title{
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 600;
+  margin: 160px 0 0 64px;
+  max-width: 730px;
+  
+}
+
+.header__subtitle {
+  position: absolute;
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: 64px;
+  max-width: 388px;
+  bottom: 30px;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__main-illustration{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 1;
+  
+}
+
+.header__square-pic {
+  position: absolute;
+  right: 0px;
+  top: 64px;
+  width: 568px;
+  height: 568px;
+  background-color: #2F80ED;
+  z-index: 0;
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
