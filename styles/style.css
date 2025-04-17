@@ -111,6 +111,48 @@
   font-weight: 600;
 }
 
+
+/* Секция digits */
+.digits {
+  padding: 100px 0;
+  background-color: #f2f2f2;
+}
+
+.section-title {
+  font-size: 60px;
+  line-height: 115%;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 250px); /* 4 колонки по 250px */
+  gap: 60px 20px; /* Вертикальный и горизонтальный отступы */
+  justify-content: center; /* Центрирование сетки */
+  max-width: 1100px; /* Ограничение ширины для двух рядов */
+  margin: 0 auto; /* Центрирование контейнера */
+}
+
+.table__cell {
+  width: 250px; /* Ширина элемента */
+}
+
+.table__heading {
+  font-size: 24px;
+  line-height: 115%;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
